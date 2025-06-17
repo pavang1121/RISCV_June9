@@ -1,0 +1,24 @@
+vsduser@vsduser-VirtualBox:~/Documents/Day2/riscv_cpu_learn_iverilog/riscv_workshop_collaterals/labs$ ls
+1to9_custom.c  hello.c  hex8tohex32.py  load.S  picorv32.v  riscv.ld  rv32im.sh  start.ld  start.S  syscalls.c  testbench.v
+vsduser@vsduser-VirtualBox:~/Documents/Day2/riscv_cpu_learn_iverilog/riscv_workshop_collaterals/labs$ pwd
+/home/vsduser/Documents/Day2/riscv_cpu_learn_iverilog/riscv_workshop_collaterals/labs
+vsduser@vsduser-VirtualBox:~/Documents/Day2/riscv_cpu_learn_iverilog/riscv_workshop_collaterals/labs$ ls -ltr
+total 140
+-rw-rw-r-- 1 vsduser vsduser  2877 Jun 17 20:04 testbench.v
+-rw-rw-r-- 1 vsduser vsduser  1803 Jun 17 20:04 syscalls.c
+-rw-rw-r-- 1 vsduser vsduser   943 Jun 17 20:04 start.S
+-rw-rw-r-- 1 vsduser vsduser    71 Jun 17 20:04 start.ld
+-rw-rw-r-- 1 vsduser vsduser   856 Jun 17 20:04 rv32im.sh
+-rw-rw-r-- 1 vsduser vsduser  7481 Jun 17 20:04 riscv.ld
+-rw-rw-r-- 1 vsduser vsduser 94437 Jun 17 20:04 picorv32.v
+-rw-rw-r-- 1 vsduser vsduser   581 Jun 17 20:04 load.S
+-rw-rw-r-- 1 vsduser vsduser   781 Jun 17 20:04 hex8tohex32.py
+-rw-rw-r-- 1 vsduser vsduser    94 Jun 17 20:04 hello.c
+-rw-rw-r-- 1 vsduser vsduser   210 Jun 17 20:04 1to9_custom.c
+vsduser@vsduser-VirtualBox:~/Documents/Day2/riscv_cpu_learn_iverilog/riscv_workshop_collaterals/labs$ chmod 777 rv32im.sh 
+vsduser@vsduser-VirtualBox:~/Documents/Day2/riscv_cpu_learn_iverilog/riscv_workshop_collaterals/labs$ ./rv32im.sh 
+Sum of number from 1 to 2 is 3
+TRAP
+vsduser@vsduser-VirtualBox:~/Documents/Day2/riscv_cpu_learn_iverilog/riscv_workshop_collaterals/labs$ 
+
+
