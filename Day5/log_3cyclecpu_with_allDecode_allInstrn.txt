@@ -1,0 +1,236 @@
+
+
+INFORM(0) (PROD_INFO):
+	SandPiper(TM) 1.14-2022/10/10-beta-Pro from Redwood EDA, LLC
+	(DEV) Run as: "java -jar /src/sandpiper.jar --ide --iArgs --distroRef=NO_DISTRO --debugSigs --licenseFile /src/full_license_key.txt --viz --dhtml --stats --compiler verilator -i top.m4 -o top.sv
+	For help, including product info, run with -h.
+
+INFORM(0) (LICENSE):
+	Licensed to "Redwood EDA, LLC" as: Full Edition.
+
+INFORM(0) (FILES):
+	Reading "top.m4"
+	to produce (relative to "/projects/BBf7pA0"):
+		Translated HDL File: "top.sv"
+		Generated HDL File: "top_gen.sv"
+		HTML TLX File: "top.html"
+		Simulation Visualization File: "top_viz.json"
+		Statistics Directory: "top_stats"
+
+LOGIC_ERROR(5) (UNASSIGNED-SIG): File 'top.tlv' Line 137 (char 17)
+	Preprocessed as 'top.m4':137(ch17):
+	+----------------vvvvvvvv-----------------
+	|         //ALU
+	|         $result[31:0] = $is_addi ? $src1_value + $imm:
+	|                $is_add ? $src1_value + $src2_value:
+	|                $is_load ? $src1_value + $imm:
+	|                $is_s_instr ? $src1_value + $imm :
+	|                $is_andi ? $src1_value & $imm:
+	|                $is_ori ? $src1_value | $imm:
+	|                $is_xori ? $src1_value ^ $imm:
+	>                $is_slli ? $src1_value << $imm[5:0]:
+	|                $is_srli ? $src1_value >> $imm[5:0]:
+	|                $is_and ? $src1_value & $src2_value:
+	|                $is_or ? $src1_value | $src2_value:
+	|                $is_xor ? $src1_value ^ $src2_value:
+	|                $is_sub ? $src1_value - $src2_value:
+	|                $is_sll ? $src1_value << $src2_value[4:0]:
+	|                $is_srl ? $src1_value >> $src2_value[4:0]:
+	|                $is_sltu ? $src1_value < $src2_value:
+	|                $is_sltiu ? $src1_value < $imm:
+	|                $is_lui ? {$imm[31:12],'0}:
+	|                $is_auipc ? $pc + $imm :
+	|                $is_jal ? $pc + 4 :
+	|                $is_jalr ? $pc + 4 :
+	|                $is_srai ? { {32{$src1_value[31]}}, $src1_value} >> $imm[4:0]:
+	|                $is_slt ? ($src1_value[31] == $src2_value[31]) ? $sltu_rslt : {31'b0, $src1_value[31]}:
+	|                $is_slti ? ($src1_value[31] == $imm[31]) ? $sltiu_rslt : {31'b0, $src1_value[31]}:
+	|                $is_sra ? { {32{$src1_value[31]}}, $src1_value} >> $src2_value[4:0]:
+	|                'x;
+	+----------------^^^^^^^^-----------------
+	Signal |cpu$is_slli is used but never assigned.
+
+LOGIC_ERROR(5) (UNASSIGNED-SIG): File 'top.tlv' Line 151 (char 17)
+	Preprocessed as 'top.m4':151(ch17):
+	+----------------vvvvvvvv-----------------
+	|         //ALU
+	|         $result[31:0] = $is_addi ? $src1_value + $imm:
+	|                $is_add ? $src1_value + $src2_value:
+	|                $is_load ? $src1_value + $imm:
+	|                $is_s_instr ? $src1_value + $imm :
+	|                $is_andi ? $src1_value & $imm:
+	|                $is_ori ? $src1_value | $imm:
+	|                $is_xori ? $src1_value ^ $imm:
+	|                $is_slli ? $src1_value << $imm[5:0]:
+	|                $is_srli ? $src1_value >> $imm[5:0]:
+	|                $is_and ? $src1_value & $src2_value:
+	|                $is_or ? $src1_value | $src2_value:
+	|                $is_xor ? $src1_value ^ $src2_value:
+	|                $is_sub ? $src1_value - $src2_value:
+	|                $is_sll ? $src1_value << $src2_value[4:0]:
+	|                $is_srl ? $src1_value >> $src2_value[4:0]:
+	|                $is_sltu ? $src1_value < $src2_value:
+	|                $is_sltiu ? $src1_value < $imm:
+	|                $is_lui ? {$imm[31:12],'0}:
+	|                $is_auipc ? $pc + $imm :
+	|                $is_jal ? $pc + 4 :
+	|                $is_jalr ? $pc + 4 :
+	>                $is_srai ? { {32{$src1_value[31]}}, $src1_value} >> $imm[4:0]:
+	|                $is_slt ? ($src1_value[31] == $src2_value[31]) ? $sltu_rslt : {31'b0, $src1_value[31]}:
+	|                $is_slti ? ($src1_value[31] == $imm[31]) ? $sltiu_rslt : {31'b0, $src1_value[31]}:
+	|                $is_sra ? { {32{$src1_value[31]}}, $src1_value} >> $src2_value[4:0]:
+	|                'x;
+	+----------------^^^^^^^^-----------------
+	Signal |cpu$is_srai is used but never assigned.
+
+LOGIC_ERROR(5) (UNASSIGNED-SIG): File 'top.tlv' Line 138 (char 17)
+	Preprocessed as 'top.m4':138(ch17):
+	+----------------vvvvvvvv-----------------
+	|         //ALU
+	|         $result[31:0] = $is_addi ? $src1_value + $imm:
+	|                $is_add ? $src1_value + $src2_value:
+	|                $is_load ? $src1_value + $imm:
+	|                $is_s_instr ? $src1_value + $imm :
+	|                $is_andi ? $src1_value & $imm:
+	|                $is_ori ? $src1_value | $imm:
+	|                $is_xori ? $src1_value ^ $imm:
+	|                $is_slli ? $src1_value << $imm[5:0]:
+	>                $is_srli ? $src1_value >> $imm[5:0]:
+	|                $is_and ? $src1_value & $src2_value:
+	|                $is_or ? $src1_value | $src2_value:
+	|                $is_xor ? $src1_value ^ $src2_value:
+	|                $is_sub ? $src1_value - $src2_value:
+	|                $is_sll ? $src1_value << $src2_value[4:0]:
+	|                $is_srl ? $src1_value >> $src2_value[4:0]:
+	|                $is_sltu ? $src1_value < $src2_value:
+	|                $is_sltiu ? $src1_value < $imm:
+	|                $is_lui ? {$imm[31:12],'0}:
+	|                $is_auipc ? $pc + $imm :
+	|                $is_jal ? $pc + 4 :
+	|                $is_jalr ? $pc + 4 :
+	|                $is_srai ? { {32{$src1_value[31]}}, $src1_value} >> $imm[4:0]:
+	|                $is_slt ? ($src1_value[31] == $src2_value[31]) ? $sltu_rslt : {31'b0, $src1_value[31]}:
+	|                $is_slti ? ($src1_value[31] == $imm[31]) ? $sltiu_rslt : {31'b0, $src1_value[31]}:
+	|                $is_sra ? { {32{$src1_value[31]}}, $src1_value} >> $src2_value[4:0]:
+	|                'x;
+	+----------------^^^^^^^^-----------------
+	Signal |cpu$is_srli is used but never assigned.
+
+LOGIC_ERROR(5) (UNASSIGNED-SIG): File 'top.tlv' Line 153 (char 60)
+	Preprocessed as 'top.m4':153(ch60):
+	+-----------------------------------------------------------vvvvvvvvvvv-
+	|         //ALU
+	|         $result[31:0] = $is_addi ? $src1_value + $imm:
+	|                $is_add ? $src1_value + $src2_value:
+	|                $is_load ? $src1_value + $imm:
+	|                $is_s_instr ? $src1_value + $imm :
+	|                $is_andi ? $src1_value & $imm:
+	|                $is_ori ? $src1_value | $imm:
+	|                $is_xori ? $src1_value ^ $imm:
+	|                $is_slli ? $src1_value << $imm[5:0]:
+	|                $is_srli ? $src1_value >> $imm[5:0]:
+	|                $is_and ? $src1_value & $src2_value:
+	|                $is_or ? $src1_value | $src2_value:
+	|                $is_xor ? $src1_value ^ $src2_value:
+	|                $is_sub ? $src1_value - $src2_value:
+	|                $is_sll ? $src1_value << $src2_value[4:0]:
+	|                $is_srl ? $src1_value >> $src2_value[4:0]:
+	|                $is_sltu ? $src1_value < $src2_value:
+	|                $is_sltiu ? $src1_value < $imm:
+	|                $is_lui ? {$imm[31:12],'0}:
+	|                $is_auipc ? $pc + $imm :
+	|                $is_jal ? $pc + 4 :
+	|                $is_jalr ? $pc + 4 :
+	|                $is_srai ? { {32{$src1_value[31]}}, $src1_value} >> $imm[4:0]:
+	|                $is_slt ? ($src1_value[31] == $src2_value[31]) ? $sltu_rslt : {31'b0, $src1_value[31]}:
+	>                $is_slti ? ($src1_value[31] == $imm[31]) ? $sltiu_rslt : {31'b0, $src1_value[31]}:
+	|                $is_sra ? { {32{$src1_value[31]}}, $src1_value} >> $src2_value[4:0]:
+	|                'x;
+	+-----------------------------------------------------------^^^^^^^^^^^-
+	Signal |cpu$sltiu_rslt is used but never assigned.
+
+LOGIC_ERROR(5) (UNASSIGNED-SIG): File 'top.tlv' Line 152 (char 66)
+	Preprocessed as 'top.m4':152(ch66):
+	+-----------------------------------------------------------------vvvvvvvvvv-
+	|         //ALU
+	|         $result[31:0] = $is_addi ? $src1_value + $imm:
+	|                $is_add ? $src1_value + $src2_value:
+	|                $is_load ? $src1_value + $imm:
+	|                $is_s_instr ? $src1_value + $imm :
+	|                $is_andi ? $src1_value & $imm:
+	|                $is_ori ? $src1_value | $imm:
+	|                $is_xori ? $src1_value ^ $imm:
+	|                $is_slli ? $src1_value << $imm[5:0]:
+	|                $is_srli ? $src1_value >> $imm[5:0]:
+	|                $is_and ? $src1_value & $src2_value:
+	|                $is_or ? $src1_value | $src2_value:
+	|                $is_xor ? $src1_value ^ $src2_value:
+	|                $is_sub ? $src1_value - $src2_value:
+	|                $is_sll ? $src1_value << $src2_value[4:0]:
+	|                $is_srl ? $src1_value >> $src2_value[4:0]:
+	|                $is_sltu ? $src1_value < $src2_value:
+	|                $is_sltiu ? $src1_value < $imm:
+	|                $is_lui ? {$imm[31:12],'0}:
+	|                $is_auipc ? $pc + $imm :
+	|                $is_jal ? $pc + 4 :
+	|                $is_jalr ? $pc + 4 :
+	|                $is_srai ? { {32{$src1_value[31]}}, $src1_value} >> $imm[4:0]:
+	>                $is_slt ? ($src1_value[31] == $src2_value[31]) ? $sltu_rslt : {31'b0, $src1_value[31]}:
+	|                $is_slti ? ($src1_value[31] == $imm[31]) ? $sltiu_rslt : {31'b0, $src1_value[31]}:
+	|                $is_sra ? { {32{$src1_value[31]}}, $src1_value} >> $src2_value[4:0]:
+	|                'x;
+	+-----------------------------------------------------------------^^^^^^^^^^-
+	Signal |cpu$sltu_rslt is used but never assigned.
+
+WARNING(1) (UNUSED-SIG): File 'top.tlv' Line 101 (char 10)
+	Preprocessed as 'top.m4':101(ch10):
+	+---------vvvvvv--------------------------
+	>         $is_sb = $dec_bits ==? 11'bx_000_0100011;
+	+---------^^^^^^--------------------------
+	Signal |cpu$is_sb is assigned but never used.
+	To silence this message use "`BOGUS_USE($is_sb)".
+
+WARNING(1) (UNUSED-SIG): File 'top.tlv' Line 102 (char 10)
+	Preprocessed as 'top.m4':102(ch10):
+	+---------vvvvvv--------------------------
+	>         $is_sh = $dec_bits ==? 11'bx_001_0100011;
+	+---------^^^^^^--------------------------
+	Signal |cpu$is_sh is assigned but never used.
+	To silence this message use "`BOGUS_USE($is_sh)".
+
+WARNING(1) (UNUSED-SIG): File 'top.tlv' Line 103 (char 10)
+	Preprocessed as 'top.m4':103(ch10):
+	+---------vvvvvv--------------------------
+	>         $is_sw = $dec_bits ==? 11'bx_010_0100011;
+	+---------^^^^^^--------------------------
+	Signal |cpu$is_sw is assigned but never used.
+	To silence this message use "`BOGUS_USE($is_sw)".
+
+WARNING(1) (UNUSED-SIG): File 'top.tlv' Line 46 (char 10)
+	Preprocessed as 'top.m4':46(ch10):
+	+---------vvvvvv--------------------------
+	>         $start = >>1$reset && !$reset;
+	+---------^^^^^^--------------------------
+	Signal |cpu$start is assigned but never used.
+	To silence this message use "`BOGUS_USE($start)".
+
+INFORM(0) (STATS):
+	SandPiper generated 68% of your HDL code.
+	This includes: 176 signal declarations, 91 flops/latches, and 4 conditional clock signals.
+	View "top_stats" for more details.
+
+SandPiper returning status 5.
+
+Verilator 5.019 devel rev v5.018-97-g8e1c0b085
+verilator --cc -j 3 +librescan +libext+.sv --top-module makerchip -Wno-fatal -y . -y /src/verilog -y /src/proj_default -y /src/proj_verilog -y /src/sandhost -y /src/lib +incdir+. +incdir+./sv_url_inc +incdir+/src/verilog +incdir+/src/proj_default +incdir+/src/proj_verilog +incdir+/src/sandhost +incdir+/src/lib makerchip.sv --timing --trace-max-array 64 --assert --trace
+Using pre-built verilated*.o object files.
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -DVL_DEBUG=1 -c -o sim_main.o sim_main.cpp
+/usr/bin/python3 /usr/local/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vmakerchip.cpp Vmakerchip___024root__DepSet_heb589fd1__0.cpp Vmakerchip___024root__DepSet_h19d90021__0.cpp Vmakerchip__Trace__0.cpp Vmakerchip__ConstPool_0.cpp Vmakerchip___024root__Slow.cpp Vmakerchip___024root__DepSet_heb589fd1__0__Slow.cpp Vmakerchip___024root__DepSet_h19d90021__0__Slow.cpp Vmakerchip__Syms.cpp Vmakerchip__Trace__0__Slow.cpp Vmakerchip__TraceDecls__0__Slow.cpp > Vmakerchip__ALL.cpp
+echo "" > Vmakerchip__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -DVL_DEBUG=1 -c -o Vmakerchip__ALL.o Vmakerchip__ALL.cpp
+Archive ar -rcs Vmakerchip__ALL.a Vmakerchip__ALL.o
+g++     -g sim_main.o verilated.o verilated_vcd_c.o verilated_threads.o Vmakerchip__ALL.a    -pthread -lpthread -latomic -o simx  2>&1 | c++filt
+rm Vmakerchip__ALL.verilator_deplist.tmp
+Simulating and tracing...
+Simulation PASSED!!!
+
